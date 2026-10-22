@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étoile</title>
+<meta name="description" content="Étoile lee las reseñas de Google de cadenas con varias sucursales: qué pasó en cada una y qué hay que atender hoy.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="étoile">
+<meta property="og:title" content="Étoile">
+<meta property="og:description" content="Cada tienda es una estrella. Sus clientes deciden cuánto brilla.">
+<meta property="og:url" content="https://etoile.ultimaibrahim.dev/info/">
+<meta property="og:image" content="https://etoile.ultimaibrahim.dev/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="étoile: el mapa de México con cada sucursal como una estrella. Cada tienda es una estrella; sus clientes deciden cuánto brilla.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://etoile.ultimaibrahim.dev/og.jpg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="info.css">
+<script src="vida.js"></script>
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="logo" href="./" aria-label="Étoile, inicio">étoile</a>
+  <nav class="top-nav" aria-label="Principal"><span class="top-ind" aria-hidden="true"></span><a href="./" aria-current="page">Qué es</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Condiciones</a></nav>
+  <a class="top-cta" href="/login/">Entrar<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div><span class="top-progreso" aria-hidden="true"></span></header>
+<section class="hero"><div class="in">
+  <div class="hero-txt">
+    <h1>Cada sucursal es una estrella. Sus clientes deciden cuánto brilla.</h1>
+    <p>Étoile lee las reseñas de Google de cadenas con varias sucursales y las convierte en una lectura corta por turno: cómo va cada tienda, qué quejas siguen abiertas y dónde se concentran.</p>
+    <a class="btn" href="/login/">Entrar a Étoile</a>
+    <p class="hero-nota">Acceso por invitación. Las reseñas llegan de Google Business Profile y se actualizan cada 30 minutos.</p>
+  </div>
+  <figure class="mapa" id="mapa"></figure>
+</div></section>
+<main>
+  <section class="que">
+    <h2>Qué hace</h2>
+    <div class="foco">
+      <div class="foco-txt">
+        <h3>Quejas que requieren acción</h3>
+        <p>Detecta con reglas explícitas las reseñas graves: salud, plagas, objetos extraños, trato y temas legales. Cada una dice qué palabra la disparó, así que no hay cajas negras: se ve por qué está ahí y se puede abrir su seguimiento.</p>
+      </div>
+      <figure class="resena">
+        <figcaption>Así se ve una queja grave en Étoile (ejemplo, no es una reseña real)</figcaption>
+        <div class="resena-cab"><b>Sucursal de ejemplo</b><time>21:40</time></div>
+        <div class="resena-fila"><span class="resena-est" aria-label="2 de 5 estrellas"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><span class="vacia"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg></span></span><span class="grave"><i></i>Grave</span><span class="sin-resp">Sin respuesta</span></div>
+        <div class="resena-por">Objeto extraño: «cabello»</div>
+        <p>“La comida llegó tibia y encontré un <mark>cabello</mark> en el plato. Nadie se acercó a la mesa.”</p>
+      </figure>
+    </div>
+    <div class="apoyos">
+      <article class="func rv" style="--i:0">
+        <svg preserveAspectRatio="xMinYMid meet" class="ilu ilu-tend" viewBox="0 0 160 56" aria-hidden="true"><line class="meta" x1="4" y1="16" x2="156" y2="16"/><text x="6" y="11">meta 4.60</text><path pathLength="1" class="trazo" d="M6 46 C20 42 26 34 38 37 S58 26 70 29 S92 18 104 22 S128 12 140 14 L152 12"/><circle class="punta" cx="152" cy="12" r="3"/></svg>
+        <h3>Calificación y volumen</h3><p>Promedio y número de reseñas por sucursal, región y mes contra la meta de 4.60 estrellas, con la tendencia de los últimos doce meses.</p>
+      </article>
+      <article class="func rv" style="--i:1">
+        <svg preserveAspectRatio="xMinYMid meet" class="ilu ilu-horas" viewBox="0 0 160 56" aria-hidden="true"><rect style="--b:0" class="barra" x="6" y="44" width="7" height="8" rx="1.5"/><rect style="--b:1" class="barra" x="17" y="40" width="7" height="12" rx="1.5"/><rect style="--b:2" class="barra" x="28" y="34" width="7" height="18" rx="1.5"/><rect style="--b:3" class="barra" x="39" y="26" width="7" height="26" rx="1.5"/><rect style="--b:4" class="barra pico" x="50" y="14" width="7" height="38" rx="1.5"/><rect style="--b:5" class="barra pico" x="61" y="8" width="7" height="44" rx="1.5"/><rect style="--b:6" class="barra" x="72" y="20" width="7" height="32" rx="1.5"/><rect style="--b:7" class="barra" x="83" y="32" width="7" height="20" rx="1.5"/><rect style="--b:8" class="barra" x="94" y="38" width="7" height="14" rx="1.5"/><rect style="--b:9" class="barra" x="105" y="30" width="7" height="22" rx="1.5"/><rect style="--b:10" class="barra pico" x="116" y="16" width="7" height="36" rx="1.5"/><rect style="--b:11" class="barra" x="127" y="24" width="7" height="28" rx="1.5"/><rect style="--b:12" class="barra" x="138" y="36" width="7" height="16" rx="1.5"/><rect style="--b:13" class="barra" x="149" y="42" width="7" height="10" rx="1.5"/><line class="base" x1="4" y1="52.5" x2="156" y2="52.5"/></svg>
+        <h3>Cuándo ocurre</h3><p>Las quejas por hora, siempre en la hora local de cada sucursal, para saber en qué momento del día se concentran.</p>
+      </article>
+      <article class="func rv" style="--i:2">
+        <svg preserveAspectRatio="xMinYMid meet" class="ilu ilu-comp" viewBox="0 0 160 56" aria-hidden="true"><path pathLength="1" class="trazo" d="M6 14 C30 16 44 26 64 28 S100 40 118 42 L154 46"/><path pathLength="1" class="trazo b" d="M6 46 C28 44 46 38 66 30 S104 14 126 12 L154 9"/><circle class="punta a" cx="154" cy="46" r="3"/><circle class="punta" cx="154" cy="9" r="3"/></svg>
+        <h3>Comparar tiendas</h3><p>Una sucursal frente a otra, o frente a su propio histórico, para ver quién mejora y quién cae.</p>
+      </article>
+    </div>
+  </section>
+  <section class="glosario" id="glosario">
+    <h2>Cómo leer el cielo</h2>
+    <p class="gl-intro">Cada tienda es una estrella. Sus clientes deciden cuánto brilla. La <b>forma y el color</b> dicen dónde está la tienda; cuando hace falta, <b>una sola señal</b> dice hacia dónde va: el cometa si sube, la estrella fugaz si baja, la variable si cambió de estado en el mes. Así, una tienda <span class="gl-par"><span class="gl-rosa" data-signo="tenue+cometa"></span><b>tenue con cometa</b></span> tiene potencial, y una <span class="gl-par"><span class="gl-rosa" data-signo="tenue+fugaz"></span><b>tenue con estrella fugaz</b></span> está en riesgo. Las señales aparecen solo donde alguien va a actuar: el detalle de la tienda, los pendientes y el reporte.</p>
+    <div class="gl-tabla">
+      <table>
+        <thead><tr><th scope="col">Signo</th><th scope="col">Qué es</th><th scope="col">Qué quiere decir</th></tr></thead>
+        <tbody>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="llega"></span>Llega</th><td>Cargando</td><td>El dato acaba de llegar; en un momento toma forma.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="sin"></span>Sin señal</th><td>Sin reseñas con texto este mes</td><td>Todavía no hay con qué medir.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="apaga"></span>Se apaga</th><td>Menos de 4.30</td><td>Está por debajo. Es la tienda a la que hay que llamar.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="tenue"></span>Tenue</th><td>De 4.30 a 4.44</td><td>Debajo de la meta.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="tenue_alta"></span>Tenue alta</th><td>De 4.45 a 4.59</td><td>Cerca de la meta.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="brilla"></span>Brilla</th><td>De 4.60 a 4.74</td><td>En la meta.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="brilla_alta"></span>Brilla alta</th><td>De 4.75 a 4.89</td><td>Bien arriba de la meta. Entre más picos y más luz, más arriba.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="polar"></span>Polar</th><td>4.90 o más, con 15 reseñas</td><td>La mejor forma. Pide evidencia: un 5.0 con dos reseñas no cuenta.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="halago"></span>Halago</th><td>Reseña que elogia</td><td>Vale la pena compartirla con el equipo.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="atencion"></span>Atención</th><td>Revisar hoy</td><td>Algo no cuadra. No es urgente, pero pide ojos.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="alerta"></span>Alerta</th><td>Grave</td><td>Atender ya.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="recompensa"></span>Recompensa</th><td>Mes en la meta</td><td>Cerró el mes arriba del corte y gana su carta de 24 horas.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="ocultacion"></span>Ocultación</th><td>Perfil sin acceso</td><td>La tienda sigue ahí, pero no vemos sus reseñas: perfil suspendido, sin permiso o cerrada por obra.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="nova"></span>Nova</th><td>+0.20 contra el mes pasado</td><td>Subió de golpe.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="cometa"></span>Cometa</th><td>Racha al alza</td><td>Tres semanas o más subiendo. Sobre «tenue» se lee «con potencial».</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="fugaz"></span>Estrella fugaz</th><td>Racha a la baja</td><td>Tres semanas o más bajando. Sobre «brilla» se lee «se le escapa».</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="culmina"></span>Culminación</th><td>Hora pico</td><td>La hora del día en que más reseñas recibe.</td></tr>
+        <tr><th scope="row"><span class="gl-rosa" data-signo="variable"></span>Variable</th><td>Cambió de estado en el mes</td><td>A la izquierda, cómo empezó el mes; a la derecha, cómo va.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="gl-nota">La forma y el orden usan un brillo ajustado que pide evidencia: con pocas reseñas, la tienda se acerca al promedio de su región. El número que se muestra siempre es el promedio real.</p>
+    <p class="gl-cierre">Mira el cielo, ve a la tienda.</p>
+  </section>
+  <section>
+    <h2>Quién lo usa</h2>
+    <div class="roles">
+      <div><b>Gerente de sucursal</b><span>Ve su tienda: cómo va el mes y qué reseñas siguen sin atender.<span class="alcance" aria-hidden="true"><i class="si"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></div>
+      <div><b>Gerente zonal</b><span>Ve su región completa y qué sucursal requiere atención primero.<span class="alcance" aria-hidden="true"><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></div>
+      <div><b>Gerente regional y corporativo</b><span>Ven el panorama nacional y las tendencias de la marca.<span class="alcance" aria-hidden="true"><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i><i class="si"></i></span></span></div>
+    </div>
+    <p class="roles-nota">Cada punto es una sucursal (aquí, las 33 de La Crêpe Parisienne); los dorados son los que cada rol tiene en primer plano.</p>
+  </section>
+  <section>
+    <h2>Uso de los datos de Google</h2>
+    <div class="legal">
+      <p>Étoile se conecta a la API de Google Business Profile con el permiso <code>business.manage</code>, otorgado por la persona administradora de las fichas del negocio. Lee las reseñas, las respuestas publicadas y los datos de las fichas de esas sucursales. No accede a Gmail, Drive, contactos ni a ningún otro servicio de Google.</p>
+      <p>Los datos se usan únicamente para que el equipo del negocio analice su propia reputación. No se venden, no se comparten con terceros para publicidad y no se usan para entrenar modelos de inteligencia artificial. El uso de la información recibida de las API de Google se apega a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+      <p>Más detalle en la <a href="privacidad.html">política de privacidad</a> y las <a href="terminos.html">condiciones del servicio</a>.</p>
+    </div>
+  </section>
+  <section>
+    <h2>¿Necesitas acceso?</h2>
+    <p>Las cuentas las crea la administración de cada empresa para cada persona y sucursal. Si ya trabajas con Étoile y no tienes una, pídela a tu administración. Si tu empresa quiere usar Étoile, escribe a <a href="mailto:helloultima@ultimaibrahim.dev">helloultima@ultimaibrahim.dev</a>.</p>
+  </section>
+</main>
+<footer class="pie"><div class="pie-int">
+  <div class="pie-marca">
+    <a class="logo" href="./">étoile</a>
+    <p>Las reseñas de Google de cada sucursal, leídas por turno: qué pasó y qué hay que atender.</p>
+    <a class="pie-firma" href="https://ultimaibrahim.dev" rel="noopener"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M50 75 C52 65 58 55 70 55 C65 48 55 42 50 20 C45 42 35 48 30 55 C42 55 48 65 50 75 Z M50 20 C53 42 63 46 80 42 C70 52 62 60 50 75 C38 60 30 52 20 42 C37 46 47 42 50 20 Z"/></svg><span>Un sistema de <b>Ultima Ibrahim</b></span></a>
+  </div>
+  <nav class="pie-links" aria-label="Mapa del sitio">
+    <div><b>Usar</b><a href="./">Qué es</a><a href="/login/">Entrar</a></div>
+    <div><b>Legal</b><a href="privacidad.html">Privacidad</a><a href="terminos.html">Condiciones</a></div>
+    <div><b>Contacto</b><a href="mailto:helloultima@ultimaibrahim.dev">Escribir</a><a href="https://ultimaibrahim.dev" rel="noopener">ultimaibrahim.dev</a></div>
+  </nav>
+</div></footer>
+<script src="/js/rosa.js" defer></script>
+<script src="constelacion.js" defer></script>
+<script src="glosario.js" defer></script>
+</body></html>

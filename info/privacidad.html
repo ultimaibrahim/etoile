@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Étoile</title>
+<meta name="description" content="Qué datos de Google usa Étoile, para qué y cómo se protegen.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="info.css">
+<script src="vida.js"></script>
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="logo" href="./" aria-label="Étoile, inicio">étoile</a>
+  <nav class="top-nav" aria-label="Principal"><span class="top-ind" aria-hidden="true"></span><a href="./">Qué es</a><a href="privacidad.html" aria-current="page">Privacidad</a><a href="terminos.html">Condiciones</a></nav>
+  <a class="top-cta" href="/login/">Entrar<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div><span class="top-progreso" aria-hidden="true"></span></header>
+<main><article class="prose">
+<h1>Política de privacidad</h1>
+<p class="meta">Última actualización: octubre de 2026</p>
+<p>Étoile es una herramienta de análisis de reseñas para la operación de empresas con varias sucursales (sus clientes). No es un servicio abierto al público: solo acceden las personas con una cuenta creada por la administración de cada cliente.</p>
+
+<h2>Qué datos de Google usamos</h2>
+<p>La aplicación se conecta a la API de Google Business Profile con el permiso <code>https://www.googleapis.com/auth/business.manage</code>, otorgado por el administrador de las fichas del negocio. Con él lee, de las sucursales que ese administrador gestiona:</p>
+<ul>
+<li>reseñas (calificación, comentario, fecha, nombre público y foto de perfil del reseñador tal como Google los muestra);</li>
+<li>las respuestas publicadas por el negocio;</li>
+<li>el nombre y los identificadores de las fichas.</li>
+</ul>
+<p>No lee datos de Gmail, Drive, contactos ni de ninguna otra cuenta o servicio de Google.</p>
+
+<h2>Para qué los usamos</h2>
+<p>Únicamente para mostrar calificaciones, tendencias y quejas por sucursal a quienes operan el negocio, y para clasificar las quejas por tema (servicio, calidad, valor). No se usan para publicidad, perfilado, venta ni entrenamiento de modelos de inteligencia artificial.</p>
+
+<h2>Dónde se guardan y quién los ve</h2>
+<ul>
+<li>Los datos se almacenan en una base de datos (Supabase) con control de acceso por rol: cada usuario ve solo las sucursales que le corresponden, y no hay lectura anónima.</li>
+<li>Las credenciales de acceso a Google se guardan como variables de entorno cifradas del servidor y nunca se incluyen en el código ni se envían al navegador.</li>
+<li>No vendemos, alquilamos ni compartimos estos datos con terceros, salvo los proveedores de infraestructura necesarios para operar el servicio (alojamiento y base de datos).</li>
+</ul>
+
+<h2>Uso limitado de datos de Google</h2>
+<p>El uso y la transferencia a cualquier otra aplicación de la información recibida de las API de Google se apegan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+<h2>Conservación, revocación y eliminación</h2>
+<p>Las reseñas se conservan mientras la ficha del negocio esté activa en el sistema. El administrador puede revocar el acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; al hacerlo, la sincronización se detiene. Para solicitar la eliminación de datos o resolver dudas, escribe al contacto indicado abajo.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:helloultima@ultimaibrahim.dev">helloultima@ultimaibrahim.dev</a></p>
+
+</article></main>
+<footer class="pie"><div class="pie-int">
+  <div class="pie-marca">
+    <a class="logo" href="./">étoile</a>
+    <p>Las reseñas de Google de cada sucursal, leídas por turno: qué pasó y qué hay que atender.</p>
+    <a class="pie-firma" href="https://ultimaibrahim.dev" rel="noopener"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M50 75 C52 65 58 55 70 55 C65 48 55 42 50 20 C45 42 35 48 30 55 C42 55 48 65 50 75 Z M50 20 C53 42 63 46 80 42 C70 52 62 60 50 75 C38 60 30 52 20 42 C37 46 47 42 50 20 Z"/></svg><span>Un sistema de <b>Ultima Ibrahim</b></span></a>
+  </div>
+  <nav class="pie-links" aria-label="Mapa del sitio">
+    <div><b>Usar</b><a href="./">Qué es</a><a href="/login/">Entrar</a></div>
+    <div><b>Legal</b><a href="privacidad.html">Privacidad</a><a href="terminos.html">Condiciones</a></div>
+    <div><b>Contacto</b><a href="mailto:helloultima@ultimaibrahim.dev">Escribir</a><a href="https://ultimaibrahim.dev" rel="noopener">ultimaibrahim.dev</a></div>
+  </nav>
+</div></footer>
+</body></html>

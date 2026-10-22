@@ -1,0 +1,102 @@
+{
+  "app": {
+    "name": "étoile",
+    "version": "2.0.0-eltanin",
+    "environment": "showcase-demo",
+    "authMode": "demo"
+  },
+  "brand": {
+    "name": "Café & Bistró Lumière",
+    "concept": "Haute Hospitality & Artisan Pastry",
+    "benchmarkGoal": 4.65
+  },
+  "locations": [
+    {
+      "id": "loc-01",
+      "slug": "champs-elysees",
+      "nombre": "Bistró Lumière — Polanco",
+      "region": "CDMX",
+      "zona": "Centro-Poniente",
+      "rating": 4.8,
+      "reviewsCount": 420,
+      "pines": 12,
+      "active": true
+    },
+    {
+      "id": "loc-02",
+      "slug": "lafayette",
+      "nombre": "Bistró Lumière — Providencia",
+      "region": "GDL",
+      "zona": "Occidente",
+      "rating": 4.6,
+      "reviewsCount": 315,
+      "pines": 8,
+      "active": true
+    },
+    {
+      "id": "loc-03",
+      "slug": "saint-germain",
+      "nombre": "Bistró Lumière — San Pedro",
+      "region": "MTY",
+      "zona": "Norte",
+      "rating": 4.9,
+      "reviewsCount": 540,
+      "pines": 15,
+      "active": true
+    }
+  ],
+  "kpis": {
+    "globalRating": 4.76,
+    "totalReviews": 1275,
+    "npsScore": 78,
+    "sentimentPositive": 89.2,
+    "sentimentNeutral": 6.1,
+    "sentimentNegative": 4.7,
+    "activeIncidents": 1
+  },
+  "reviews": [
+    {
+      "id": "rev-101",
+      "locationId": "loc-01",
+      "author": "Valeria H.",
+      "rating": 5,
+      "date": "2026-10-20",
+      "text": "La crepe de frutos rojos con masa bretona es sublime. El servicio impecable y la atmósfera editorial inigualable.",
+      "sentiment": "positive",
+      "categories": ["Producto", "Servicio", "Ambiente"],
+      "pinAwarded": true
+    },
+    {
+      "id": "rev-102",
+      "locationId": "loc-02",
+      "author": "Carlos M.",
+      "rating": 4,
+      "date": "2026-10-19",
+      "text": "Excelente café y crepas saladas, aunque en horas pico el tiempo de entrega de cocina demoró 15 minutos más de lo habitual.",
+      "sentiment": "neutral",
+      "categories": ["Tiempos de Entrega", "Cocina"],
+      "pinAwarded": false
+    },
+    {
+      "id": "rev-103",
+      "locationId": "loc-03",
+      "author": "Sophie R.",
+      "rating": 5,
+      "date": "2026-10-18",
+      "text": "La atención de Andrea en barra fue de estrella Michelin. Cada detalle cuidado al milímetro.",
+      "sentiment": "positive",
+      "categories": ["Hospitalidad", "Servicio"],
+      "pinAwarded": true
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-01",
+      "locationId": "loc-02",
+      "title": "Demora en comanda de mesas exteriores",
+      "status": "resolving",
+      "severity": "media",
+      "createdAt": "2026-10-21T14:30:00Z"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# robots.txt · étoile — La Crêpe Parisienne
+# Plataforma de Inteligencia Operativa y Reputación de Hospitalidad
+
+User-agent: *
+Allow: /
+Allow: /favicon.png
+Allow: /index.html
+Allow: /llms.txt
+Allow: /.well-known/llms.txt
+Allow: /sitemap.xml
+Disallow: /page/
+Disallow: /api/
+Disallow: /netlify/
+Disallow: /data/
+Disallow: /.netlify/
+
+# Directivas para Crawlers de Inteligencia Artificial (LLMs)
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Disallow: /page/
+Disallow: /api/
+Disallow: /data/
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Disallow: /page/
+Disallow: /api/
+Disallow: /data/
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Disallow: /page/
+Disallow: /api/
+Disallow: /data/
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Disallow: /page/
+Disallow: /api/
+Disallow: /data/
+
+Sitemap: https://etoile.ultimaibrahim.dev/sitemap.xml

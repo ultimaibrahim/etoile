@@ -1,0 +1,27 @@
+# étoile · Inteligencia Operativa y Reputación LCP
+> Plataforma analítica y operacional de reseñas de Google Maps para La Crêpe Parisienne (Grupo MYT / Corporativo Alancar).
+
+## Resumen Ejecutivo
+étoile es una Progressive Web App / SPA diseñada con el sistema de diseño Crystal & Squircle para gerentes generales, directores y jefes de zona de La Crêpe Parisienne en México. Permite el monitoreo continuo de satisfacción del cliente (CSAT), alertas proactivas ante caídas de calificación y detección automatizada de problemáticas de servicio, calidad y valor mediante modelos de lenguaje (LLMs) e ingesta serverless.
+
+## Cobertura de Sucursales (33 Tiendas a Nivel Nacional)
+- **Región Guadalajara (GDL)**: Andares, Plaza Patria, Midtown Jalisco, Galerías Guadalajara, Via Viva, Galerías Santa Anita, La Perla, Forum Tlaquepaque.
+- **Región Ciudad de México (CDMX)**: Aztlán, Plaza Carso, Parque La Mexicana, Paseo Acoxpa, Tepeyac, Polanquito, Oceanía, Artz Pedregal, Arcos Bosques, Mitikah, Oasis Coyoacán, Parque Duraznos, Centro Santa Fe, Plaza Satélite.
+- **Región Monterrey (MTY)**: Galerías Monterrey, Galerías Valle Oriente, Fashion Drive.
+- **Regiones Foráneas**: Altacia (León / Guanajuato), The Park (San Luis Potosí), Altaria (Aguascalientes), Galerías Metepec y Town Square (Toluca / Estado de México), Antea (Querétaro), Marina Puerto Cancún (Cancún / Quintana Roo), Plaza Península (Tijuana / Baja California).
+
+## Metodología y Reglas Operacionales
+1. **Calificación Promedio (CSAT)**: Promedio aritmético y suavizado bayesiano ponderado para evaluar el estándar mínimo regional (meta corporativa >= 4.50 estrellas).
+2. **Tratamiento de Reseñas sin Texto**: Las calificaciones sin comentario escrito cuentan exclusivamente para el promedio bruto de estrellas y SEO de Google Maps; quedan estrictamente excluidas de las alertas de quejas y tópicos cualitativos.
+3. **Clasificación Heurística y Semántica**: Detección de causas raíz en tres ejes fundamentales: Atención y Servicio, Calidad del Producto (temperatura, sabor, presentación) y Relación Valor/Precio.
+4. **Respuesta a Reseñas Críticas**: Monitoreo de opiniones de 1 y 2 estrellas que carecen de respuesta oficial por parte del propietario de la sucursal.
+
+## Arquitectura Técnica
+- **Frontend**: SPA basada en JavaScript moderno (ES2020+), Chart.js 4.4, hash router reactivo, soporte Mobile-First (Safe Areas) y paleta Crystal Squircle (Verde Corporativo #3D5A47, Sage #7A9E8A, Crema #F5EFE6, Oro #B8902F).
+- **Backend & Almacenamiento**: Supabase (PostgreSQL con Row Level Security y autenticación de roles), Netlify Functions (Node.js serverless).
+- **Control de Acceso (RBAC)**: Roles de Director, Gerente Regional, Gerente Zonal y Gerente de Tienda.
+
+## Enlaces Canónicos
+- Aplicación Web: https://etoile.ultimaibrahim.dev/
+- Metodología y Changelog: https://etoile.ultimaibrahim.dev/#/acerca
+- Aviso de Privacidad: https://etoile.ultimaibrahim.dev/#/privacidad
